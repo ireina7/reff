@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ireina.rpc.enumeration.RpcError;
 import ireina.rpc.exception.RpcException;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 import java.util.Set;
@@ -13,6 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 默认的服务注册表
  * @author ireina7
  */
+@Component
 public class DefaultServiceRegistry implements ServiceRegistry {
     
     private static final Logger logger =
